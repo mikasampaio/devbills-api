@@ -1,4 +1,4 @@
-import { CategoryRepository } from '../database/repositories/categories.repositories';
+import { CategoryRepository } from '../database/repositories/categories.repository';
 import { CategoryModel } from '../database/schemas/category.schema';
 import { CategoriesServices } from '../services/categories.services';
 

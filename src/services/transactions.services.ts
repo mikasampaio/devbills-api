@@ -1,9 +1,10 @@
 import { StatusCodes } from 'http-status-codes';
-import { CategoryRepository } from '../database/repositories/categories.repositories';
-import { TransactionRepository } from '../database/repositories/transactions.repositories';
+import { CategoryRepository } from '../database/repositories/categories.repository';
+import { TransactionRepository } from '../database/repositories/transactions.repository';
 import {
   CreateTransactionDTO,
   GetDashboardDTO,
+  GetFinancialDTO,
   GetTransactionDTO,
 } from '../dtos/transactions.dtos';
 import { Transaction } from '../entities/transactions.entity';
@@ -74,5 +75,11 @@ export class TransactionService {
       });
     }
     return { balance, expenses };
+  }
+
+  async getFinancial({ year }: GetFinancialDTO): Promise<Balance[]> {
+    const result = await this.transactionRepository.getFinancial({ year });
+
+    return result;
   }
 }

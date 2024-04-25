@@ -5,6 +5,7 @@ import { TransactionFactory } from '../factories/transaction.factory';
 import {
   createTransactionSchema,
   getDashboardSchema,
+  getFinancialSchema,
   getTransactionSchema,
 } from '../dtos/transactions.dtos';
 
@@ -39,4 +40,13 @@ TransactionRoutes.post(
     type: ParamsType.BODY,
   }),
   transaction.create,
+);
+
+TransactionRoutes.get(
+  '/financial',
+  validator({
+    schema: getFinancialSchema,
+    type: ParamsType.QUERY,
+  }),
+  transaction.getFinancial,
 );

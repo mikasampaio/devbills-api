@@ -1,4 +1,4 @@
-import { CategoryRepository } from '../database/repositories/categories.repositories';
+import { CategoryRepository } from '../database/repositories/categories.repository';
 import { CreateCategoryDTO } from '../dtos/categories.dtos';
 import { Category } from '../entities/category.entity';
 
