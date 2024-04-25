@@ -13,4 +13,3 @@ baseRoutes.get('/', (_, res) => {
   });
 });
 
-//* ENTITY -> SERVICE -> CONTROLLER -> ROUTE

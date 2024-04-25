@@ -15,3 +15,5 @@ mongo().then(() => {
   
   app.listen(port, () => console.log(`App is running at port ${port}!`));
 });
+
+//* ENTITY -> SERVICE -> CONTROLLER -> ROUTE
