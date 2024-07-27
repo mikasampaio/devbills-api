@@ -1,2 +1,2 @@
-# devbills-api
-# devbills-api
+# Descrição
+Desenvolvi uma API para uma aplicação de controle financeiro utilizando Node.js, TypeScript, MongoDB e Docker. O sistema de back-end foi projetado para suportar funcionalidades robustas de gerenciamento financeiro, permitindo a criação de categorias, o registro de transações de gastos ou receitas, e a recuperação dessas informações de maneira eficiente. Utilizei o MongoDB como banco de dados para armazenar dados de forma flexível e escalável. O uso de Docker permitiu a criação de ambientes de desenvolvimento e produção consistentes e isolados.
